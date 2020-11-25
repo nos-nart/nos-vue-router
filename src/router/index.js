@@ -13,7 +13,8 @@ const routes = [
   {
     path: "/brazil",
     name: "brazil",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Brazil.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Brazil.vue'),
+    meta: { transitionName: `slide` },
   },
   {
 
