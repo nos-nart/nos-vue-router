@@ -4,11 +4,14 @@
       <router-link to="/">Home</router-link>
       <router-link to="/brazil">Brazil</router-link>
     </div>
-    <router-view/>
+    <transition-page>
+      <router-view/>
+    </transition-page>
   </div>
 </template>
 
 <script>
+import TransitionPage from './transitions/TransitionPage.vue';
 
 export default {
   name: 'App',
