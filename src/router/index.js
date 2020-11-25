@@ -1,10 +1,13 @@
-import { createRouter } from 'vue-router'
+import VueRouter from 'vue-router'
+import Vue from 'vue'
 import NotFound from '../views/NotFound.vue';
+
+Vue.use(VueRouter)
 
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "home",
     component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
   },
   {
@@ -15,12 +18,13 @@ const routes = [
   {
 
     path: '/:pathMatch(.*)*',
-    name:'NotFound',
+    name: 'NotFound',
     component: NotFound
   }
 ]
 
-const router = createRouter({
+const router = new VueRouter({
+  mode: 'history',
   routes
 })
 
