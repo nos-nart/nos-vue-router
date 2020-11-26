@@ -16,7 +16,8 @@ import TransitionPage from './transitions/TransitionPage.vue';
 export default {
   name: 'App',
   components: {
-  }
+    TransitionPage,
+  },
 }
 </script>
 
