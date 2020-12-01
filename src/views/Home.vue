@@ -4,9 +4,9 @@
       <p class="text-2xl font-bold">Khám phá Việt Nam</p>
       <p class="text-gray-500">Các điểm đến phổ biến này có nhiều điều chờ đón bạn</p>
     </div>
-    <div class="grid grid-cols-5 gap-4 mt-6">
+    <div class="grid lg:grid-cols-5 grid-cols-4 gap-4 mt-6">
       <div v-for="destination in destinations" :key="destination.id">
-        <router-link :to="destination.slug">
+        <router-link :to="{ name: 'destination', params: { slug: destination.slug } }">
           <div class="h-40 overflow-hidden">
             <img class="object-cover" :src="require(`@/assets/${destination.image}`)" alt="">
           </div>

@@ -10,34 +10,24 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
+    props: true
   },
   {
-    path: "/hue",
-    name: "hue",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Hue.vue'),
-    meta: { transitionName: `slide` },
-  },
-  {
-    path: "/hanoi",
-    name: "hanoi",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Hanoi.vue'),
-    meta: { transitionName: `slide` },
-  },
-  {
-    path: "/saigon",
-    name: "saigon",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Saigon.vue'),
+    path: "/destination/:slug",
+    name: "destination",
+    component: () => import(/* webpackChunkName: "hue" */ '../views/Destination.vue'),
+    props: true,
     meta: { transitionName: `slide` },
   },
   {
     path: "/contact",
     name: "contact",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue'),
+    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
     meta: { transitionName: `slide` },
+    props: true
   },
   {
-
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: NotFound
