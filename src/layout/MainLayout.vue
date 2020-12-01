@@ -6,13 +6,7 @@
     </h1>
     <ul class="flex items-center text-md cursor-pointer text-sm">
       <li class="mx-3">
-        <router-link to="/hanoi" exact class="route" active-class="route-active">Hà Nội</router-link>
-      </li>
-      <li class="mx-3">
-        <router-link to="/hue" class="route" active-class="route-active">Huế</router-link>
-      </li>
-      <li class="mx-3">
-        <router-link to="/saigon" class="route" active-class="route-active">Sài Gòn</router-link>
+        <router-link to="/contact" exact class="route" active-class="route-active">Liên hệ</router-link>
       </li>
       <div class="uppercase text-gray-900 cursor-pointer">
         <a href="https://github.com/nos-nart/nos-vue-router" target="_blank" rel="noopener noreferrer">

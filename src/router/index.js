@@ -4,6 +4,8 @@ import NotFound from '../views/NotFound.vue';
 
 Vue.use(VueRouter)
 
+// transitionName = 'slide' | 'zoom'
+
 const routes = [
   {
     path: "/",
@@ -26,6 +28,12 @@ const routes = [
     path: "/saigon",
     name: "saigon",
     component: () => import(/* webpackChunkName: "about" */ '../views/Saigon.vue'),
+    meta: { transitionName: `slide` },
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue'),
     meta: { transitionName: `slide` },
   },
   {
