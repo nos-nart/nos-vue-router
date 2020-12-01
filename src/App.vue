@@ -1,22 +1,20 @@
 <template>
-  <div id="app">
-    <div class="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/brazil">Brazil</router-link>
-    </div>
+  <main-layout>
     <transition-page>
       <router-view/>
     </transition-page>
-  </div>
+  </main-layout>
 </template>
 
 <script>
 import TransitionPage from './transitions/TransitionPage.vue';
+import MainLayout from './layout/MainLayout.vue';
 
 export default {
   name: 'App',
   components: {
     TransitionPage,
+    MainLayout
   },
 }
 </script>

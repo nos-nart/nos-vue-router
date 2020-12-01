@@ -11,9 +11,21 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
   },
   {
-    path: "/brazil",
-    name: "brazil",
-    component: () => import(/* webpackChunkName: "about" */ '../views/Brazil.vue'),
+    path: "/hue",
+    name: "hue",
+    component: () => import(/* webpackChunkName: "about" */ '../views/Hue.vue'),
+    meta: { transitionName: `slide` },
+  },
+  {
+    path: "/hanoi",
+    name: "hanoi",
+    component: () => import(/* webpackChunkName: "about" */ '../views/Hanoi.vue'),
+    meta: { transitionName: `slide` },
+  },
+  {
+    path: "/saigon",
+    name: "saigon",
+    component: () => import(/* webpackChunkName: "about" */ '../views/Saigon.vue'),
     meta: { transitionName: `slide` },
   },
   {

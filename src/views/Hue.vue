@@ -1,6 +1,6 @@
 <template>
   <div>
-    this is brazil page
+    this is hue page
   </div>
 </template>
 
