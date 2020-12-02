@@ -19,6 +19,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "hue" */ '../views/Destination.vue'),
     props: true,
     meta: { transitionName: `slide` },
+    children: [
+      {
+        path: ":experienceSlug",
+        name: "experience",
+        props: true,
+        component: () => import(/* weboackChunkName: "experience" */ '../views/Experiences.vue'),
+      }
+    ]
   },
   {
     path: "/contact",

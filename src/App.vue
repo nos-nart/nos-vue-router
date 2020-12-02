@@ -1,7 +1,7 @@
 <template>
   <main-layout>
     <transition-page>
-      <router-view :key="$route.path"/>
+      <router-view :key="$route.params.slug"/>
     </transition-page>
   </main-layout>
 </template>
