@@ -20,4 +20,4 @@ yarn build
 yarn lint
 ```
 
-[!example](https://github.com/nos-nart/nos-vue-router/blob/master/vue-router.gif)
+![example](https://github.com/nos-nart/nos-vue-router/blob/master/vue-router.gif)
